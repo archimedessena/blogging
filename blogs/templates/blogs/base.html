@@ -26,40 +26,52 @@
 <body>
 <!-- Navigation -->
 <nav class="navbar navbar-light bg-white navbar-expand-lg fixed-top" id="mainNav">
-    <div class="container">
+    <div class="container-fluid">
         <a class="navbar-brand" href="#">BLOGGING EXPERTS</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
+    </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav navbar-center ml-auto ">
                <!---- <li class="nav-item active">
                     <a class="nav-link" href="#">Home
                         <span class="sr-only">(current)</span>
                     </a>
                 </li> -->
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#">BLOG</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Feeds</a>
+                    <a class="nav-link" href="#">HOW TO START A BLOG</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="">Sitemap</a>
+                    <a class="nav-link" href="#">BEST CONTENT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">RESOURCES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ABOUT</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SEARCH</a>
+                    </li>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
 
+
 <header class="card-header masthead my-3">
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
-                <div class="col-md-10 col-lg-8 mx-auto">
+                <div class="col-md-10 col-lg-8 mx-auto" style="padding-left: 40px;">
                     <div class="site-heading" style="text-align: center;">
-                        <h1>Blog</h1><span class="subheading">A Blog to get the latest Python, Django and Linux Tricks</span>
+                        <h1>The Ultimate Step-by-Step Guide
+                        </h1><span class="subheading" style="font-size: large;"><strong>How to Start a Blog in 2020 (and Make Money)</strong>
+                        </span>
                     </div>
                 </div>
             </div>
@@ -77,65 +89,34 @@
             {% endblock %}
         </div>
         <!-- Sidebar Widgets Column -->
-        <div class="col-md-4">
-
-            <!-- Search Widget -->
-            <div class="card my-4">
-                <h5 class="card-header">Search for posts</h5>
-                <div class="card-body">
-                    <div class="input-group">
-              <span class="input-group-btn">
-            <a href="" class="btn btn-primary">Search Posts &rarr;</a>
-              </span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Latest Posts Widgets -->
-            <div class="card my-4">
-                <h5 class="card-header">Latest Posts</h5>
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <ul class="list-unstyled mb-0">
-                            <!--There should be a link here-->
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="col-md-4 shift">
 
             <!-- Side Widget -->
-            <div class="card my-4">
-                <h5 class="card-header">Feeds</h5>
+            <div class="card my-5">
                 <div class="card-body">
-                    <h2>Bloggingexperts</h2>
-                    <p>This is my blog. I've written <!--number of posts shared link-->posts so far</p>
-                    <p>
-                        <a href="#">Subscribe to my RSS feed</a>
-                    </p>
-                </div>
-            </div>
-            <!-- Side Widget -->
-            <div class="card my-4">
-                <h5 class="card-header">Most commented posts</h5>
-                <div class="card-body">
-                    <!--There should be a link here -->
-                    <ul>
-                        <!--A forloop here-->
-                            <li>
-                                <a href="#">Post title add from django</a>
-                            </li>
-                        <!--end of forloop-->
-                    </ul>
-                </div>
+                    <h2>Hi, I'm Archimedes</h2>
+                    <div class="container-fluid">
+                        <div class="row">
+                           <div class="col-md-10 col-lg-8 mx-auto">
+                                <ul class="list-inline text-center">
+                                    <a href="https://twitter.com/Developerayyo" target="blank"><li class="list-inline-item"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></li></a>
+                                    <a href="https://www.linkedin.com/in/babalola-peter-689768163/" target="blank"><li class="list-inline-item"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-linkedin fa-stack-1x fa-inverse"></i></span></li></a>
+                                    <a href="https://github.com/developerayyo" target="blank"><li class="list-inline-item"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-github fa-stack-1x fa-inverse"></i></span></li></a>
+                                </ul>
+                               <img src="/blogs/static/assets/img/arc.jpg" height="100" width="100">
+                           <div><p>I’m a software developer, a blogger and an online entrepreneur who teaches his readers how to start a blog and grow a successful online business.</p>
+                            </div>
+                            </div>
+                        </div> 
+                    </div>
+               </div>
             </div>
         </div>
     </div>
 </div>
 <!-- Footer -->
 <footer class="py-4 bg-light">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-10 col-lg-8 mx-auto">
                 <ul class="list-inline text-center">
@@ -147,6 +128,8 @@
             </div>
         </div>
     </div>
+
+
     <!-- /.container -->
 </footer>
 <script src="{% static "assets/vendor/jquery/jquery.min.js" %}"></script>

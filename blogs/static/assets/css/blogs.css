@@ -173,3 +173,22 @@ input[type=submit] {
 /*        background: grey;*/
 /*    }*/
 /*}*/
+
+/* Here*/
+
+
+.navbar-nav.navbar-center { 
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%); 
+} 
+
+.nav-item.nav-link{
+    margin: 50px;
+
+
+}
+
+/*.col-md-4.shift
+    
+}*/
