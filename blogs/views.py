@@ -17,5 +17,11 @@ class BestContentList(ListView):
     template_name = 'blogs/bestcontentlist.html'
 
 
+class BlogList(ListView):
+    queryset = Post.objects.order_by('-date_posted')
+    context_object_name = 'posts'
+    template_name = 'blogs/blog.html'
+
+
 
 
