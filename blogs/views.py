@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views.generic import ListView
-from blogs.models import Post
+from blogs.models import Post, Blog
 
 # Create your views here.
 def home(request):
@@ -18,8 +18,8 @@ class BestContentList(ListView):
 
 
 class BlogList(ListView):
-    queryset = Post.objects.order_by('-date_posted')
-    context_object_name = 'posts'
+    queryset = Blog.objects.order_by('-date_posted')
+    context_object_name = 'entries'
     template_name = 'blogs/blog.html'
 
 
