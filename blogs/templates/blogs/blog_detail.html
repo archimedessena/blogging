@@ -15,7 +15,7 @@
     <hr>
 
     <!-- Date/Time -->
-    <p>Posted on {{ entry.publish }}</p>
+    <p>Posted on {{ entry.date_posted }}</p>
 
     <hr>
 
@@ -24,6 +24,10 @@
 
     <hr>
 
+
+    <div>
+        <p>{{ entry.content }}</p>
+    </div>
     <!-- Post Content 
     <p>{{ entry.body|markdown }}</p>
 

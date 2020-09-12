@@ -14,7 +14,7 @@
                 <h2 class="card-title">{{ entry.title }}</h2>
             </a>
         </h2>
-        <a href="#" class="btn btn-primary">CONTINUE READING &rarr;</a>
+        <a href="{% url 'blog-detail' entry.id %}"></a>" class="btn btn-primary">CONTINUE READING &rarr;</a>
     </div>
     <div class="card-footer text-muted">
         Published {{ entry.date_posted }} by {{ entry.author }}
