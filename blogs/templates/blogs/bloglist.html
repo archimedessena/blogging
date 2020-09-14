@@ -7,14 +7,14 @@
        <h1>{{ entry.title}}</h1>
    </header>
   <div class="card mb-4" id="cardib">
-    <img class="card-img-top" src="{{ entry.post_image.url }}" alt="Card image cap" width="750" height="300">
+    <img class="card-img-top" src="" alt="Card image cap" width="750" height="300">
     <div class="card-body">
         <h2>
             <a href="#">
                 <h2 class="card-title">{{ entry.title }}</h2>
             </a>
         </h2>
-        <a href="{% url 'blog-detail' entry.id %}"></a>" class="btn btn-primary">CONTINUE READING &rarr;</a>
+        <class= href="{% url 'blog-detail' object.id %}" class="btn btn-primary">CONTINUE READING &rarr;</a>
     </div>
     <div class="card-footer text-muted">
         Published {{ entry.date_posted }} by {{ entry.author }}

@@ -1,5 +1,6 @@
 {
     "python.linting.pylamaEnabled": false,
     "python.linting.enabled": true,
-    "python.linting.pylintEnabled": true
+    "python.linting.pylintEnabled": true,
+    "compile-hero.disable-compile-files-on-did-save-code": true
 }

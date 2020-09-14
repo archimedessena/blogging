@@ -1,3 +1,4 @@
+from django.shortcuts import render, get_object_or_404
 from django.shortcuts import render
 from django.views.generic import ListView, DetailView
 from blogs.models import Post, Blog
@@ -26,11 +27,12 @@ class BestContentDetailView(DetailView):
 class BlogList(ListView):
     queryset = Blog.objects.order_by('-date_posted')
     context_object_name = 'entries'
-    template_name = 'blogs/blog.html'
+    template_name = 'blogs/bloglist.html'
 
 
 class BlogDetailView(DetailView):
-    model = Blog
+    model = Blog.objects.order_by('-date_posted')
+    template_name = 'blogs/blog_detail.html'
 
 
 
